@@ -1,0 +1,43 @@
+package online.clugo19.examen_android
+
+// RecordsFragment.kt
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import online.clugo19.examen_android.databinding.FragmentRecordsBinding
+
+class RecordsFragment : Fragment() {
+
+    private var _binding: FragmentRecordsBinding? = null
+    private val binding get() = _binding!!
+    private lateinit var adapter: RegistrosAdapter
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentRecordsBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        adapter = RegistrosAdapter(RegistroRepository.registros)
+        binding.rvRecords.layoutManager = LinearLayoutManager(requireContext())
+        binding.rvRecords.adapter = adapter
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Actualizar la lista en caso de que se hayan agregado nuevos registros
+        adapter.notifyDataSetChanged()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+}
+

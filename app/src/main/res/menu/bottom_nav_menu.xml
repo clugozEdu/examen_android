@@ -1,0 +1,11 @@
+<!-- bottom_nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_registro"
+        android:title="Registro"
+        android:icon="@drawable/ic_form" />
+    <item
+        android:id="@+id/nav_registros"
+        android:title="Registros"
+        android:icon="@drawable/ic_list" />
+</menu>

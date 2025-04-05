@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">examen_android</string>
+    <string-array name="escuelas_array">
+        <item>Escuela San Pedro</item>
+        <item>Escuela Santa Clara de Asis</item>
+        <item>ESscuela La Fraternidad</item>
+        <item>EScuela Villa Nueva</item>
+    </string-array>
+</resources>

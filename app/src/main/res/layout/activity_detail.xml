@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_detail.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título de la pantalla de detalle -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detalle de la Visita"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- TextView para mostrar la escuela seleccionada -->
+        <TextView
+            android:id="@+id/tvEscuela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escuela: "
+            android:layout_marginTop="16dp" />
+
+        <!-- TextView para mostrar la fecha -->
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha: "
+            android:layout_marginTop="8dp" />
+
+        <!-- TextView para mostrar la hora de entrada -->
+        <TextView
+            android:id="@+id/tvHoraEntrada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora de Entrada: "
+            android:layout_marginTop="8dp" />
+
+        <!-- TextView para mostrar la hora de salida -->
+        <TextView
+            android:id="@+id/tvHoraSalida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora de Salida: "
+            android:layout_marginTop="8dp" />
+
+        <!-- TextView para mostrar el detalle u observación -->
+        <TextView
+            android:id="@+id/tvDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detalle/Observación: "
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>
